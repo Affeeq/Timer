@@ -1,0 +1,54 @@
+html {
+	font-size: 16px;
+}
+
+#container {
+	margin: 1em 1em;
+}
+	#container #title {
+		text-align: center;
+		font-size: 2.5em;
+	}
+
+	#container .timer {
+		display: grid;
+		grid-template-columns: 20% 20% 20% 20% 20%;
+	}
+
+		#container .timer .time {
+			text-align: center;
+			font-size: 3em;
+		}
+
+			#container .timer .time span {
+				padding: 0.3em;
+				border: 2px solid #808080;
+			}
+
+		#container .timer #hour-desc {
+			grid-column: 1;
+		}
+
+		#container .timer #min-desc {
+			grid-column: 3;
+		}
+
+		#container .timer #sec-desc {
+			grid-column: 5;
+		}
+
+		#container .timer .view {
+			text-align: center;
+			font-size: 1.5em;
+		}
+
+	#container #form #timeValid {
+		color: #ff0000;
+		text-align: center;
+		visibility: hidden;
+	}	
+		
+	#container #form #error {
+		color: #ff0000;
+		visibility: hidden;
+	}
